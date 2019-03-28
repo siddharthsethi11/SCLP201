@@ -1016,10 +1016,13 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
                                     <styles xsi:type="bwnotation:BackgroundStyle"/>
-                                    <styles xsi:type="bwnotation:ResizingStyle"/>
+                                    <styles
+                                    restoreHeight="325"
+                                    restoreWidth="871"
+                                    restoreX="2" xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0"/>
                                     <layoutConstraint
-                                    height="222"
+                                    height="325"
                                     width="871"
                                     x="2" xsi:type="notation:Bounds"/>
                                     </children>
@@ -1207,7 +1210,8 @@
                     <bpws:scope name="scope1">
                         <bpws:flow name="flow1">
                             <bpws:links>
-                                <bpws:link name="EmptyToRenderJSON1" tibex:linkType="SUCCESSWITHCONDITION"/>
+                                <bpws:link name="EmptyToRenderJSON1_v2"
+                                    tibex:label="v2" tibex:linkType="SUCCESSWITHCONDITION"/>
                                 <bpws:link name="AllProductsToEmpty" tibex:linkType="SUCCESS"/>
                                 <bpws:link name="EmptyToRenderJSON" tibex:linkType="SUCCESSWITHCONDITION"/>
                                 <bpws:link name="RenderJSONTogetOut" tibex:linkType="SUCCESS"/>
@@ -1239,7 +1243,7 @@
                                     outputVariable="RenderJSON1"
                                     tibex:xpdlId="606099e6-56ca-478d-8334-d8f9660fc0b3" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
-                                    <bpws:target linkName="EmptyToRenderJSON1"/>
+                                    <bpws:target linkName="EmptyToRenderJSON1_v2"/>
                                     </bpws:targets>
                                     <bpws:sources>
                                     <bpws:source linkName="RenderJSON1TogetOut"/>
@@ -1282,7 +1286,7 @@
                                     </tibex:DesignExpression>
                                     <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[$get.parameters/tns:version="v1"]]></bpws:transitionCondition>
                                     </bpws:source>
-                                    <bpws:source linkName="EmptyToRenderJSON1">
+                                    <bpws:source linkName="EmptyToRenderJSON1_v2">
                                     <tibex:DesignExpression>
                                     <tibex:expression
                                     expression="$get/parameters/tns:inventory_qGetParameters/tns:version=&quot;v2&quot;" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>

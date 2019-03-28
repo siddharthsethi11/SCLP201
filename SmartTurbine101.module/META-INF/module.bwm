@@ -19,6 +19,9 @@
     <sca:interface.wsdl xmi:id="_wV3xlkjpEemQdajVkIZP-g" interface="http://xmlns.example.com/20190317191937#wsdl.interface(inventory_q)" scaext:wsdlLocation="../Processes/smartturbine101/module/Inventory_Q.bwp"/>
     <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_wV4YoEjpEemQdajVkIZP-g" name="RestService3" path="/inventory_q" docBasePath="http://localhost:7777/SmartTurbine101.module" docResourcePath="inventory_q" basePath="/" connector="smartturbine101.module.Process" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/smartturbine101.module.Inventory_Q-inventory_q.json">
       <operation xmi:id="_wV4_sEjpEemQdajVkIZP-g" operationName="get" nickname="get-inventory_q" httpMethod="GET" responseStyle="element">
+        <parameters xmi:id="_SS7MkFFTEem45pUfUUWhKg">
+          <parameterMapping xmi:id="_SS7MkVFTEem45pUfUUWhKg" parameterName="version" parameterType="Query" dataType="string"/>
+        </parameters>
         <clientFormat>json</clientFormat>
         <clientRequestFormat>json</clientRequestFormat>
       </operation>
@@ -62,7 +65,7 @@
   <sca:component xmi:id="_3A-UwFFGEem45pUfUUWhKg" name="ComponentInventory_P" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_3A-UwVFGEem45pUfUUWhKg" processName="smartturbine101.module.Inventory_P"/>
     <sca:service xmi:id="_7F4UoFFGEem45pUfUUWhKg" name="inventory">
-      <sca:interface.wsdl xmi:id="_7F5iwFFGEem45pUfUUWhKg" interface="http://xmlns.example.com/20190328104719PLT#wsdl.interface(inventory)" scaext:wsdlLocation="../Processes/smartturbine101/module/Inventory_P.bwp"/>
+      <sca:interface.wsdl xmi:id="_7F5iwFFGEem45pUfUUWhKg" interface="http://xmlns.example.com/20190328104719PLT#wsdl.interface(inventory)"/>
     </sca:service>
   </sca:component>
 </sca:composite>
