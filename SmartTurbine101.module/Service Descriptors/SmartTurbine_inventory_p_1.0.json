@@ -1,0 +1,70 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "SmartTurbine_inventory_p",
+    "x-lastModified": "Mar 28, 2019 03:02AM PST"
+  },
+  "paths": {
+    "/{version}/inventory": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/SmartTurbineResponseSchema"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "version",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": "",
+            "default": "v1"
+          }
+        ],
+        "operationId": "getViInventory"
+      }
+    }
+  },
+  "definitions": {
+    "SmartTurbineResponseSchema": {
+      "type": "object",
+      "properties": {
+        "dialogAction": {
+          "type": "object",
+          "properties": {
+            "fulfillmentState": {
+              "type": "string",
+              "default": "string"
+            },
+            "type": {
+              "type": "string",
+              "default": "string"
+            },
+            "message": {
+              "type": "object",
+              "properties": {
+                "contentType": {
+                  "type": "string",
+                  "default": "string"
+                },
+                "content": {
+                  "type": "string",
+                  "default": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

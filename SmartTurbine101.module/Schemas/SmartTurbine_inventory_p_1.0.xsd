@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="/T1553770066463Converted/JsonSchema" xmlns:tns="/T1553770066463Converted/JsonSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="SmartTurbineResponseSchema" type="tns:SmartTurbineResponseSchema"/>
+    <xs:complexType name="SmartTurbineResponseSchema">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="dialogAction">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="fulfillmentState" type="xs:string"/>
+                        <xs:element minOccurs="0" name="type" type="xs:string"/>
+                        <xs:element minOccurs="0" name="message">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element minOccurs="0" name="contentType" type="xs:string"/>
+                                    <xs:element minOccurs="0" name="content" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
